@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-redis = "*"
+pymongo = {extras = ["srv"], version = "^4.2.0"}
 fastapi = "*"
 
 
