@@ -1,0 +1,6 @@
+[flake8]
+exclude = .git,__pycache__,.direnv,.envrc
+max-line-length = 200
+extend-ignore =
+    # See https://github.com/PyCQA/pycodestyle/issues/373
+    E203,
