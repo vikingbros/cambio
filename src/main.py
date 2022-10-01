@@ -3,12 +3,7 @@ from fastapi import FastAPI
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 from routes import router
-
-
-class Config:
-    atlas_uri: str = "mongodb+srv://cambio:cambio@cambio.o9wq6.mongodb.net/?retryWrites=true&w=majority"
-    db_name: str = "cambio"
-
+from config import Config
 
 config = Config()
 app = FastAPI()
