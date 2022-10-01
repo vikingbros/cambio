@@ -43,3 +43,9 @@ class Game(Model):
 class CreateGame(BaseModel, extra=Extra.forbid):
     name: str
     players: list[Player] = []
+
+
+class UpdateGame(BaseModel, extra=Extra.forbid):
+    name: Optional[str] = None
+    deck: Optional[Deck] = None
+    players: Optional[list[Player]] = None
